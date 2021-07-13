@@ -1,38 +1,97 @@
 .App {
   text-align: center;
+  background-color: #070724;
+  background-image: url(./assets/background-stars.svg);
+  min-height: 100%;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  color: #FFFFFF;
+  font-family: 'Spartan', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF
+}
+
+.source-link {
+  text-decoration: underline;
+}
+
+p {
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 12px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.information {
+  margin-bottom: 20px;
+}
+
+
+/* Tabs */
+
+/* Planet Images */
+
+.image-container {
+  height: 304px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#mercury-image {
+  max-width: 34%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Stats */
+
+.stat-box {
+  max-width: 80%;
+  border: 1px solid #838391;
+  margin: 4px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 48px;
 }
+
+.stat-box:last-of-type {
+  margin-bottom: 5px;
+}
+
+.stat-title {
+  font-size: 10px;
+  color: #838391;
+  margin-left: 8px;
+}
+
+.stat-metric {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+
+

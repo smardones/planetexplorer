@@ -1,20 +1,23 @@
 import React from 'react';
 
 function NavBar() {
+
+    function isMobile() {}
+    
     return(
         <div>
             <nav>
-                <h2>THE PLANETS</h2>
-                <ul className="nav-list">
-                    <li>MERCURY</li>
-                    <li>VENUS</li>
-                    <li>EARTH</li>
-                    <li>MARS</li>
-                    <li>JUPITER</li>
-                    <li>SATURN</li>
-                    <li>URANUS</li>
-                    <li>NEPTUNE</li>
-                </ul>
+                <h1>THE PLANETS</h1>
+                <div className="nav-list">
+                    <a>MERCURY</a>
+                    <a>VENUS</a>
+                    <a>EARTH</a>
+                    <a>MARS</a>
+                    <a>JUPITER</a>
+                    <a>SATURN</a>
+                    <a>URANUS</a>
+                    <a>NEPTUNE</a>
+                </div>
             </nav>
         </div>
     )

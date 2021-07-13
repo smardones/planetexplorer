@@ -12,16 +12,18 @@ function Mercury(props) {
     // define the relevant planet's info to pass down to page and components
     let planetInfo = props.props[0];
     return(
-        <div>
+        <body>
             {/* Here is the mobile sized JSX */}
             <section id="mobile">
-                <NavBar />
+                
                 <Tabs />
-                <img id="mercury-image" src={PlanetImage} />
-                <h1>{planetInfo.name.toUpperCase()}</h1>
-                <p>{planetInfo.overview.content}</p>
-                <p>
-                    <a href={planetInfo.overview.source}>Wikipedia</a>
+                <div className="image-container">
+                    <img id="mercury-image" src={PlanetImage} />
+                </div>
+                <h2>{planetInfo.name.toUpperCase()}</h2>
+                <p className="information">{planetInfo.overview.content}</p>
+                <p className="source">
+                    Source: <a className="source-link" href={planetInfo.overview.source}>Wikipedia</a>
                 </p>
                 <Statistics props={planetInfo} />
 
@@ -35,7 +37,7 @@ function Mercury(props) {
             <section id="desktop">
 
             </section>
-        </div>
+        </body>
     )
 }
 

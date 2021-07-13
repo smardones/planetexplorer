@@ -3,24 +3,24 @@ import React from 'react';
 function Statistics(props) {
     console.log(props.props.name);
     return(
-        <div>
-            <div>
-               <h3>ROTATION TIME</h3>
-               <h2>{props.props.rotation.toUpperCase()}</h2>
+        <section className="stat-section">
+            <div className="stat-box">
+               <h3 className="stat-title">ROTATION TIME</h3>
+               <h2 className="stat-metric">{props.props.rotation.toUpperCase()}</h2>
             </div>
-            <div>
-                <h3>REVOLUTION TIME</h3>
-                <h2>{props.props.revolution.toUpperCase()}</h2>
+            <div className="stat-box">
+                <h3 className="stat-title">REVOLUTION TIME</h3>
+                <h2 className="stat-metric">{props.props.revolution.toUpperCase()}</h2>
             </div>
-            <div>
-                <h3>RADIUS</h3>
-                <h2>{props.props.radius.toUpperCase()}</h2>
+            <div className="stat-box">
+                <h3 className="stat-title">RADIUS</h3>
+                <h2 className="stat-metric">{props.props.radius.toUpperCase()}</h2>
             </div>
-            <div>
-                <h3>AVERAGE TEMP.</h3>
-                <h2>{props.props.temperature.toUpperCase()}</h2>
+            <div className="stat-box">
+                <h3 className="stat-title">AVERAGE TEMP.</h3>
+                <h2 className="stat-metric">{props.props.temperature.toUpperCase()}</h2>
             </div> 
-        </div>
+        </section>
     )}
 
 export default Statistics;
