@@ -2,19 +2,12 @@ import React from 'react';
 
 function Tabs() {
     return(
-    <div>
-        <ul>
-            <li>
-                <a href="/">OVERVIEW</a>
-            </li>
-            <li>
-                <a href="/">STRUCTURE</a>
-            </li>
-            <li>
-                <a href="/">SURFACE</a>
-            </li>
-        </ul>
-    </div>
+    <section className="tab-section">
+        <button className="tab-button">OVERVIEW</button>
+        <button className="tab-button">STRUCTURE</button>
+        <button className="tab-button">SURFACE</button>
+    </section>    
+    
     )}
 
 export default Tabs;

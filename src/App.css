@@ -1,14 +1,19 @@
+html {
+  background-image: url(./assets/background-stars.svg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-color: #070724;
+}
+
 .App {
   text-align: center;
-  background-color: #070724;
-  background-image: url(./assets/background-stars.svg);
-  min-height: 100%;
-  background-size: cover;
 }
 
 body {
   color: #FFFFFF;
   font-family: 'Spartan', sans-serif;
+  height: 100%;
 }
 
 h1 {
@@ -31,11 +36,15 @@ ul {
 
 a {
   text-decoration: none;
-  color: #FFFFFF
+  color: #838391;
 }
 
 .source-link {
   text-decoration: underline;
+}
+
+.source {
+  margin-bottom: 30px;
 }
 
 p {
@@ -53,6 +62,25 @@ p {
 
 /* Tabs */
 
+.tab-section {
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tab-button {
+  background-color: #070724;
+  border: none;
+  color: #838391;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .05rem;
+  font-family: Spartan, sans-serif;
+}
+
 /* Planet Images */
 
 .image-container {
@@ -68,8 +96,12 @@ p {
 
 /* Stats */
 
+.stat-section {
+  margin-bottom: 30px;
+}
+
 .stat-box {
-  max-width: 80%;
+  max-width: 90%;
   border: 1px solid #838391;
   margin: 4px auto;
   display: flex;
@@ -78,19 +110,16 @@ p {
   max-height: 48px;
 }
 
-.stat-box:last-of-type {
-  margin-bottom: 5px;
-}
-
 .stat-title {
   font-size: 10px;
   color: #838391;
-  margin-left: 8px;
+  margin-left: 20px;
+  letter-spacing: .05rem;
 }
 
 .stat-metric {
   font-size: 20px;
-  margin-right: 8px;
+  margin-right: 20px;
 }
 
 
