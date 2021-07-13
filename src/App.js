@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import planetData from './data';
 
 function App() {
   return (
