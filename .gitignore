@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+/planets-fact-site
+
 # testing
 /coverage
 
