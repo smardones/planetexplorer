@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Statistics(props) {
-    console.log(props.props.name);
+    
     return(
         <section className="stat-section">
             <div className="stat-box">

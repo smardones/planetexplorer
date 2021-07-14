@@ -98,15 +98,35 @@ nav {
   font-family: Spartan, sans-serif;
 }
 
+.tab-content-hidden {
+  display: none;
+}
+
+.tab-content-active {
+  display: block;
+}
+
+
 /* Planet Images */
 
 .image-container {
+  position: relative;
   height: 304px;
   display: flex;
   align-items: center;
 }
 
+.geology-img {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  margin-left: -50px;
+  z-index: 999;
+  max-width: 100px;
+}
+
 #mercury-image {
+  position: relative;
   max-width: 34%;
   margin: auto;
 }
