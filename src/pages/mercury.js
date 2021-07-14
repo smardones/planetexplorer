@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import isCurrentTab from '../utils/tabDisplay';
 
 // Components
@@ -13,9 +13,6 @@ import SurfaceImg from '../assets/geology-mercury.png';
 function Mercury(props) {
 
     let [currentTab, setCurrentTab] = useState('overview');
-    console.log(currentTab);
-    
-    
     // define the relevant planet's info to pass down to page and components
     let planetInfo = props.props[0];
     return(
@@ -65,8 +62,6 @@ function Mercury(props) {
                     </p>
                 </div>
                 <Statistics props={planetInfo} />
-
-
             </section>
             {/* Here is the tablet sized JSX */}
             <section id="tablet">
