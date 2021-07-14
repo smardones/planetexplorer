@@ -111,6 +111,41 @@ nav {
   margin: auto;
 }
 
+#venus-image {
+  max-width: 40%;
+  margin: auto;
+}
+
+#earth-image {
+  max-width: 45%;
+  margin: auto;
+}
+
+#mars-image {
+  max-width: 37%;
+  margin: auto;
+}
+
+#jupiter-image {
+  max-width: 60%;
+  margin: auto;
+}
+
+#saturn-image {
+  max-width: 80%;
+  margin: auto;
+}
+
+#uranus-image {
+  max-width: 55%;
+  margin: auto;
+}
+
+#neptune-image {
+  max-width: 55%;
+  margin: auto;
+}
+
 /* Stats */
 
 .stat-section {
