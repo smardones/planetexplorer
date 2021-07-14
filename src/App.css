@@ -59,13 +59,30 @@ p {
   margin-bottom: 20px;
 }
 
+/* Nav  */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#page-title {
+  margin-left: 15px;
+  letter-spacing: -.05rem;
+}
+
+#menu-toggle {
+  background-color: #070724;
+  border: none;
+  margin-right: 15px;
+}
 
 /* Tabs */
 
 .tab-section {
-  border-top: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
-  height: 70px;
+  border-top: 1px solid #838391;
+  border-bottom: 1px solid #838391;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;

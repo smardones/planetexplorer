@@ -1,25 +1,18 @@
 import React from 'react';
+import MenuIcon from '../assets/icon-hamburger.svg'
 
 function NavBar() {
 
-    function isMobile() {}
     
+
     return(
-        <div>
-            <nav>
-                <h1>THE PLANETS</h1>
-                <div className="nav-list">
-                    <a>MERCURY</a>
-                    <a>VENUS</a>
-                    <a>EARTH</a>
-                    <a>MARS</a>
-                    <a>JUPITER</a>
-                    <a>SATURN</a>
-                    <a>URANUS</a>
-                    <a>NEPTUNE</a>
-                </div>
-            </nav>
-        </div>
+        <nav>
+            <h1 id="page-title">THE PLANETS</h1>  
+            <button id="menu-toggle"> 
+                <img src={MenuIcon} />
+            </button>
+        </nav>
+        
     )
 }
 

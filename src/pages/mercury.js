@@ -15,7 +15,7 @@ function Mercury(props) {
         <body>
             {/* Here is the mobile sized JSX */}
             <section id="mobile">
-                
+                <NavBar />
                 <Tabs />
                 <div className="image-container">
                     <img id="mercury-image" src={PlanetImage} />
