@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function Tabs({setCurrentTab}) {
+function MobileTabs({setCurrentTab}) {
 
     return(
     <section className="tab-section">
@@ -12,4 +12,4 @@ function Tabs({setCurrentTab}) {
     
     )}
 
-export default Tabs;
+export default MobileTabs;

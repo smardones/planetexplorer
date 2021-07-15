@@ -3,7 +3,7 @@ import isCurrentTab from '../utils/tabDisplay';
 
 // Components
 import NavBar from '../components/nav';
-import Tabs from '../components/tabs';
+import MobileTabs from '../components/mobiletabs';
 import Statistics from '../components/statistics';
 // Image
 import PlanetImage from '../assets/planet-mercury.svg';
@@ -20,7 +20,7 @@ function Mercury(props) {
             {/* Here is the mobile sized JSX */}
             <section id="mobile">
                 <NavBar />
-                <Tabs setCurrentTab={setCurrentTab} />
+                <MobileTabs setCurrentTab={setCurrentTab} />
 
                 {/* Visible when Overview is the active tab */}
 
