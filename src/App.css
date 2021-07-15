@@ -114,6 +114,7 @@ nav {
   height: 304px;
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 
 .geology-img {
@@ -146,8 +147,9 @@ nav {
   margin: auto;
 }
 
+/* review planet image sizes */
 #jupiter-image {
-  max-width: 60%;
+  max-width: 300px;
   margin: auto;
 }
 

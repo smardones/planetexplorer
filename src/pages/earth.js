@@ -57,9 +57,9 @@ function Earth(props) {
                         <img className="geology-img" src={SurfaceImg} />
                     </div>
                     <h2>{planetInfo.name.toUpperCase()}</h2>
-                    <p className="information">{planetInfo.overview.content}</p>
+                    <p className="information">{planetInfo.geology.content}</p>
                     <p className="source">
-                        Source: <a className="source-link" href={planetInfo.overview.source}>Wikipedia</a>
+                        Source: <a className="source-link" href={planetInfo.geology.source}>Wikipedia</a>
                     </p>
                 </div>
                 <Statistics props={planetInfo} />

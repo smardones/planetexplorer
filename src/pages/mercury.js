@@ -52,13 +52,13 @@ function Mercury(props) {
                 
                 <div id="surface" className={isCurrentTab(currentTab, "surface") ? 'tab-content-active' : 'tab-content-hidden'}>
                     <div className="image-container">
-                        <img id="mercury-image" src={PlanetImage} />
-                        <img className="geology-img" src={SurfaceImg} />
+                        <img id="mercury-image" src={PlanetImage} alt='Mercury Graphic'/>
+                        <img className="geology-img" src={SurfaceImg} alt='Mercury Geological Graphic'/>
                     </div>
                     <h2>{planetInfo.name.toUpperCase()}</h2>
-                    <p className="information">{planetInfo.overview.content}</p>
+                    <p className="information">{planetInfo.geology.content}</p>
                     <p className="source">
-                        Source: <a className="source-link" href={planetInfo.overview.source}>Wikipedia</a>
+                        Source: <a className="source-link" href={planetInfo.geology.source}>Wikipedia</a>
                     </p>
                 </div>
                 <Statistics props={planetInfo} />
