@@ -17,13 +17,12 @@ function Mercury(props) {
     let planetInfo = props.props[0];
     return(
         <body>
+            <NavBar />
             {/* Here is the mobile sized JSX */}
             <section id="mobile">
-                <NavBar />
-                <MobileTabs setCurrentTab={setCurrentTab} />
 
                 {/* Visible when Overview is the active tab */}
-
+                <MobileTabs setCurrentTab={setCurrentTab} />
                 <div id="overview" className={isCurrentTab(currentTab, "overview") ? 'tab-content-active' : 'tab-content-hidden'}>
                     <div className="image-container">
                         <img id="mercury-image" src={PlanetImage} alt='Mercury Graphic'/>
@@ -61,16 +60,71 @@ function Mercury(props) {
                         Source: <a className="source-link" href={planetInfo.geology.source}>Wikipedia</a>
                     </p>
                 </div>
-                <Statistics props={planetInfo} />
             </section>
             {/* Here is the tablet sized JSX */}
             <section id="tablet">
+                
+                    {/* Visible when Overview is the active tab */}
 
+                <div id="overview" className={isCurrentTab(currentTab, "overview") ? 'tab-content-active' : 'tab-content-hidden'}>
+                    <div className="image-container">
+                        <img id="mercury-image" src={PlanetImage} alt='Mercury Graphic'/>
+                    </div>
+                    <div className="tablet-content">
+                        <div className="text-block" >
+                            <h2>{planetInfo.name.toUpperCase()}</h2>
+                            <p className="information">{planetInfo.overview.content}</p>
+                            <p className="source">
+                                Source: <a className="source-link" href={planetInfo.overview.source}>Wikipedia</a>
+                            </p>
+                        </div>
+                        <MobileTabs setCurrentTab={setCurrentTab} />
+                    </div>
+                </div>
+
+                {/* Visible when Structure is the active tab */}
+
+                <div id="structure" className={isCurrentTab(currentTab, "structure") ? 'tab-content-active' : 'tab-content-hidden'}>
+                    <div className="image-container">
+                        <img id="mercury-image" src={PlanetStructureImage} alt='Mercury Graphic'/>
+                    </div>
+                    <div className="tablet-content">
+                        <div className="text-block">
+                            <h2>{planetInfo.name.toUpperCase()}</h2>
+                            <p className="information">{planetInfo.structure.content}</p>
+                            <p className="source">
+                                Source: <a className="source-link" href={planetInfo.structure.source}>Wikipedia</a>
+                            </p>
+                        </div>
+                        <MobileTabs setCurrentTab={setCurrentTab} />
+                    </div>
+                </div>
+
+                {/* Visible when Surface is the active tab */}
+                
+                <div id="surface" className={isCurrentTab(currentTab, "surface") ? 'tab-content-active' : 'tab-content-hidden'}>
+                    <div className="image-container">
+                        <img id="mercury-image" src={PlanetImage} alt='Mercury Graphic'/>
+                        <img className="geology-img" src={SurfaceImg} alt='Mercury Geological Graphic'/>
+                    </div>
+                    <div className="tablet-content">
+                        <div className="text-block">
+                            <h2>{planetInfo.name.toUpperCase()}</h2>
+                            <p className="information">{planetInfo.geology.content}</p>
+                            <p className="source">
+                                Source: <a className="source-link" href={planetInfo.geology.source}>Wikipedia</a>
+                            </p>
+                        </div>
+                        <MobileTabs setCurrentTab={setCurrentTab} />
+                    </div>
+                </div>
             </section>
+
             {/* Here is the desktop sized JSX */}
             <section id="desktop">
 
             </section>
+            <Statistics props={planetInfo} />
         </body>
     )
 }
