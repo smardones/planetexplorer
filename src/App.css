@@ -13,7 +13,7 @@ html {
 body {
   color: #FFFFFF;
   font-family: 'Spartan', sans-serif;
-  height: 100%;
+  height: auto;
 }
 
 h1 {
@@ -65,6 +65,7 @@ ul {
 
 #tablet, #desktop {
   display: none;
+  height: 100%;
 }
 
 /* Nav  */
@@ -264,14 +265,6 @@ nav, #sidebar-header{
 
 @media screen and (min-width: 481px) {
 
-  #mobile, #desktop {
-    display: none;
-  }
-
-  #tablet {
-    display: block;
-  }
-
   /* Nav & Menu Media Queries */
 
   #menu-toggle, #sidebar {
@@ -300,6 +293,17 @@ nav, #sidebar-header{
   #menu-choices li a {
     color: #FFFFFF;
     letter-spacing: .1rem
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  #mobile, #desktop {
+    display: none;
+  }
+
+  #tablet {
+    display: block;
   }
 
   /* Tabs & Content*/
@@ -332,6 +336,10 @@ nav, #sidebar-header{
     border: 1px solid #838391;
     margin: 6px 0;
   }
+
+  .image-container {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -357,10 +365,76 @@ nav, #sidebar-header{
     font-size: .8vw;
   }
 
-  /* Tablet Content Arrangement */
+  /* Desktop Content Arrangement */
+
+  h2 {
+    font-size: 100px;
+    line-height:normal;
+    margin: auto;
+  }
+
+  .main-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 40px 100px;
+  }
+
+  .tab-content-hidden {
+    display: none;
+  }
 
   .image-container {
+    width: 90%;
+    height: 100%;
+  }
+  
+
+  .text-block {
+    text-align: left;
+  }
+
+  .information {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1vw;
+  }
+
+  .tab-section {
     display: block;
+    width: 100%;
+    height: 150px;
+    border: none;
+  }
+
+  .tab-button {
+    border: 1px solid #838391;
+    width: 100%;
+    height: 30%;
+    margin: 8px 0;
+  }
+
+  .stat-section {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .stat-box {
+    flex-direction: column;
+    width: 20%;
+    height: 120px;
+    max-height: none;
+  }
+
+  .stat-title {
+    display: block;
+    font-size: 15px;
+  }
+
+  .stat-metric {
+    font-size: 30px;
   }
 }
 
