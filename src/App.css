@@ -213,24 +213,27 @@ nav, #sidebar-header{
   margin: auto;
 }
 
-/* review planet image sizes */
+
 #jupiter-image {
   max-width: 300px;
   margin: auto;
 }
 
 #saturn-image {
-  max-width: 80%;
+  min-width: 300px;
+  max-width: 55%;
   margin: auto;
 }
 
 #uranus-image {
-  max-width: 55%;
+  min-width: 250px;
+  max-width: 40%;
   margin: auto;
 }
 
 #neptune-image {
-  max-width: 55%;
+  min-width: 250px;
+  max-width: 40%;
   margin: auto;
 }
 
@@ -340,6 +343,7 @@ nav, #sidebar-header{
 
   .image-container {
     display: block;
+    margin-top: 30px;
   }
 }
 
