@@ -18,9 +18,9 @@ function Earth(props) {
     let planetInfo = props.props[2];
     return(
         <body>
+            <NavBar />
             {/* Here is the mobile sized JSX */}
             <section id="mobile">
-                <NavBar />
                 <MobileTabs setCurrentTab={setCurrentTab} />
 
                 {/* Visible when Overview is the active tab */}
@@ -62,7 +62,7 @@ function Earth(props) {
                         Source: <a className="source-link" href={planetInfo.geology.source}>Wikipedia</a>
                     </p>
                 </div>
-                <Statistics props={planetInfo} />
+                
             </section>
             {/* Here is the tablet sized JSX */}
             <section id="tablet">
@@ -72,6 +72,7 @@ function Earth(props) {
             <section id="desktop">
 
             </section>
+            <Statistics props={planetInfo} />
         </body>
     )
 }
