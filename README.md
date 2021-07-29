@@ -2,7 +2,11 @@
 
 ## Description
 
-This project presents interesting facts about each of our 8 planets in a user-friendly and intuitive mobile-first design utilizing React. I also only used standard CSS for styling.
+This project presents interesting facts about each of our 8 planets in a user-friendly and intuitive mobile-first design utilizing React. I also only used standard CSS for styling.  
+
+## Website
+
+Click [HERE](https://whispering-stream-58778.herokuapp.com/) to visit the live site.
 
 ## Screenshots
 
