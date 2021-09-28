@@ -17,7 +17,7 @@ function Saturn(props) {
     // define the relevant planet's info to pass down to page and components
     let planetInfo = props.props[5];
     return(
-        <body>
+        <body id="saturn-body">
             <NavBar />
             {/* Here is the mobile sized JSX */}
             <section id="mobile">

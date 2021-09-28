@@ -175,6 +175,46 @@ nav, #sidebar-header{
   font-family: Spartan, sans-serif;
 }
 
+#mercury-body .tab-button:hover {
+  background-color: var(--mercury);
+  color: white;
+}
+
+#venus-body .tab-button:hover {
+  background-color: var(--venus);
+  color: white;
+}
+
+#earth-body .tab-button:hover {
+  background-color: var(--earth);
+  color: white;
+}
+
+#mars-body .tab-button:hover {
+  background-color: var(--mars);
+  color: white;
+}
+
+#jupiter-body .tab-button:hover {
+  background-color: var(--jupiter);
+  color: white;
+}
+
+#saturn-body .tab-button:hover {
+  background-color: var(--saturn);
+  color: white;
+}
+
+#uranus-body .tab-button:hover {
+  background-color: var(--uranus);
+  color: white;
+}
+
+#neptune-body .tab-button:hover {
+  background-color: var(--neptune);
+  color: white;
+}
+
 .tab-content-hidden {
   display: none;
 }
