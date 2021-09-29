@@ -158,16 +158,47 @@ nav, #sidebar-header{
   height: 20px;
   width: 20px;
   border-radius: 50%;
+  margin-right: 20px;
 }
 
 #mercury-dot {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  margin-right: 20px;
   background-color: var(--mercury);
   display: inline-block;
-  
+}
+
+#venus-dot {
+  background-color: var(--venus);
+  display: inline-block;
+}
+
+#earth-dot {
+  background-color: var(--earth);
+  display: inline-block;
+}
+
+#mars-dot {
+  background-color: var(--mars);
+  display: inline-block;
+}
+
+#jupiter-dot {
+  background-color: var(--jupiter);
+  display: inline-block;
+}
+
+#saturn-dot {
+  background-color: var(--saturn);
+  display: inline-block;
+}
+
+#uranus-dot {
+  background-color: var(--uranus);
+  display: inline-block;
+}
+
+#neptune-dot {
+  background-color: var(--neptune);
+  display: inline-block;
 }
 
 
