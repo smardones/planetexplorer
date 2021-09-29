@@ -17,6 +17,7 @@ function SideBar(props) {
             </div>
             <ul>
                 <li className="sb-menu-item">
+                    <span id="mercury-dot"></span>
                     <Link to='/'>MERCURY</Link>
                 </li>
                 <li className="sb-menu-item">

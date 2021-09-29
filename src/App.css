@@ -134,11 +134,13 @@ nav, #sidebar-header{
 }
 
 .sb-menu-item a {
-  display: block;
+  display: inline-block;
   line-height: 56px;
   height: 100%;
-  width: 100%;
+  width: 70%;
   color: #FFFFFF;
+  text-align: start;
+  padding-left: 20px;
 }
 
 #page-title {
@@ -152,6 +154,21 @@ nav, #sidebar-header{
   margin-right: 15px;
 }
 
+.dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+#mercury-dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: var(--mercury);
+  display: inline-block;
+  
+}
 
 
 /* Tabs */
